@@ -15,7 +15,8 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+                <!-- <artifactId>maven-jar-plugin</artifactId> -->
+                <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <archive>
                         <manifest>
