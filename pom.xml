@@ -1,30 +1,73 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>foo.bar.sample</groupId>
-  <artifactId>CaculadorMaven</artifactId>
-  <version>1</version>
-<!--   <dependencies>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-        <scope>compile</scope>
-    </dependency>
-  </dependencies> -->
-    <build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>HelloServlet</groupId>
+    <artifactId>maven_project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <name>maven_project</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- <repositories>
+        <repository>
+            <id>Mvnrepository</id>
+            <name>Java.net Repository for Maven</name>
+            <url>https://mvnrepository.com/artifact/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories> -->
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>        
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <!-- <artifactId>maven-jar-plugin</artifactId> -->
-                <artifactId>maven-compiler-plugin</artifactId>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>Calculadora</mainClass>
-                        </manifest>
-                    </archive>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <url>http://localhost:8295/</url>
+                    <username>admin</username>
+                   <password>admin</password>
                 </configuration>
             </plugin>
         </plugins>
