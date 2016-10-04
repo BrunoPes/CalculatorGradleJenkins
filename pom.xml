@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>HelloServlet</groupId>
-    <artifactId>HelloServletMFES_project</artifactId>
+    <artifactId>maven_project</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>maven_project</name>
+    <name>HelloServletMFES</name>
     <url>http://maven.apache.org</url>
 
     <properties>
