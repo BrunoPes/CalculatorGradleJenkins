@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>HelloServlet</groupId>
-    <artifactId>maven_project</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>HelloServletMFES_project</artifactId>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <name>maven_project</name>
@@ -13,15 +13,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <!-- <repositories>
-        <repository>
-            <id>Mvnrepository</id>
-            <name>Java.net Repository for Maven</name>
-            <url>https://mvnrepository.com/artifact/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories> -->
 
     <dependencies>
         <dependency>
