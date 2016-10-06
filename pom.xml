@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>HelloServlet</groupId>
-    <artifactId>maven_project</artifactId>
+    <artifactId>HelloServlet_project</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
@@ -56,9 +56,9 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <url>http://localhost:8295/</url>
-                    <username>admin</username>
-                   <password>admin</password>
+                    <url>http://tomcatmfes-natandtec.rhcloud.com</url>
+                    <username>tomcat</username>
+                   <password>s3cret</password>
                 </configuration>
             </plugin>
         </plugins>
